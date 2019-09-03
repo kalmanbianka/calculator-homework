@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ScoreService } from 'src/app/app/services';
+import { ScoreService } from 'src/app/app/services/score.service';
 import { from } from 'rxjs';
 
 @Component({
