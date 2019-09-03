@@ -1,0 +1,20 @@
+.app-component{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: rgb(183, 246, 246);
+    border: 1px solid gray;
+    .buttons{
+        position: absolute;
+        top: 160px;
+
+        .button{
+        display: block;
+        background: lavenderblush;
+        border: 2px dotted gray;
+        margin: 20px;
+        width: 80px;
+        height: 40px;
+        }
+    }
+}
