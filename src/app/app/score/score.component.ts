@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ScoreService } from 'src/app/app/services';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-score',
@@ -6,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./score.component.scss']
 })
 export class ScoreComponent implements OnInit {
-
-  constructor() { }
+  constructor(private scoreComponent: ScoreComponent) { }
 
   ngOnInit() {
   }

@@ -7,7 +7,8 @@ import { ScoreComponent } from './app/score/score.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ScoreComponent
+    ScoreComponent,
+    
   ],
   imports: [
     BrowserModule

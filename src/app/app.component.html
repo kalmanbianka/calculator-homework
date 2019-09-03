@@ -1,8 +1,8 @@
 <div class="app-component">
   <div class="buttons">
-    <button class="button">Increase</button>
-    <button class="button">Decrease</button>
-    <button class="button">Reset</button>
+    <button (click)="onIncrease()" class="button">Increase</button>
+    <button (click)="onDecrease()" class="button">Decrease</button>
+    <button (click)="onReset()" class="button">Reset</button>
   </div>
   <app-score></app-score>
 </div>
