@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ScoreService } from 'src/app/app/services/score.service';
+import { ScoreService } from 'src/app/app/score.service';
 import { from } from 'rxjs';
 
 @Component({
@@ -8,9 +8,21 @@ import { from } from 'rxjs';
   styleUrls: ['./score.component.scss']
 })
 export class ScoreComponent implements OnInit {
-  constructor(private scoreComponent: ScoreComponent) { }
+  scoreItem: number = 0;
+  constructor(private scoreService: ScoreService) { }
 
   ngOnInit() {
+  this.scoreService.subscribe((x=>){
+  this.scoreItem = x;
+  })
   }
+onIncrease(){
+  const value = this.scoreItem.addIncrease(x: number);
+}
+onDecrease(){
 
+}
+onReset(){
+  
+}
 }

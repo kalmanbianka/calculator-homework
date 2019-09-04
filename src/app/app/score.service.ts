@@ -11,15 +11,15 @@ export class ScoreService {
 
   counter = 0;
 
-  onAddIncrease(){
+  addIncrease(){
     this.counter ++;
   }
 
-  onAddDecrease(){
+  addDecrease(){
     this.counter --;
   }
 
-  onAddReset(){
+  addReset(){
     this.counter === 0;
   }
 }
